@@ -26,6 +26,7 @@ public class LoginActivity extends BaseActivity {
         login = (Button) findViewById(R.id.login);
 
         login.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
                 String password = passwordEdit.getText().toString();

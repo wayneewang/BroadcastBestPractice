@@ -7,14 +7,17 @@
     <TableRow>
         <TextView android:layout_height = "wrap_content"
             android:text="Account:"/>
+
         <EditText android:id="@+id/account"
             android:layout_height="wrap_content"
             android:hint="Input your account"/>
+
     </TableRow>
 
     <TableRow>
         <TextView android:layout_height="wrap_content"
             android:text="Password"/>
+
         <EditText android:id="@+id/password"
             android:hint="text Passwprd"
             android:layout_height="wrap_content"

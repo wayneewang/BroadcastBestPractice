@@ -13,8 +13,9 @@ import android.view.WindowManager;
  */
 public class ForceOfflineReceiver extends BroadcastReceiver {
     @Override
+
     public void onReceive(final Context context, Intent intent) {
-        AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(context);
+       AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(context);
 
         dialogBuilder.setTitle("Warning");
         dialogBuilder.setMessage("You are forced to be offline.Please try to login again.");
@@ -26,7 +27,7 @@ public class ForceOfflineReceiver extends BroadcastReceiver {
                 ActivityCollector.finishAll();
 
                 Intent intent = new Intent(context,LoginActivity.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 context.startActivity(intent);
             }
         });
